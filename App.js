@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import firebase from 'firebase';
 import reducers from './src/reducers';
-import RootNavigator from './src/RootNavigator';
+import RootNavigator from './src/navigation/RootNavigator';
 
 export default class App extends React.Component {
   componentWillMount() {
