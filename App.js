@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import firebase from 'firebase';
 import reducers from './src/reducers';
-import Router from './src/Router';
+import RootNavigator from './src/RootNavigator';
 
 export default class App extends React.Component {
   componentWillMount() {
@@ -26,7 +26,7 @@ export default class App extends React.Component {
 
     return (
       <Provider store={store}>
-        <Router />
+        <RootNavigator />
       </Provider>
     );
   }
